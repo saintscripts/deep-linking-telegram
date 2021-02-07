@@ -14,38 +14,38 @@ Deep Linking - это вот такие ссылки - https://t.me/usernamebot?
 
 # Делаем стандартое действие
 
-import telebot
+  import telebot
 
-TOKEN = "ваш токен"
+  TOKEN = "ваш токен"
 
-bot = telebot.TeleBot(TOKEN)
+  bot = telebot.TeleBot(TOKEN)
 
 Теперь нам нужно сделать чтобы бот реагировал на команду "/start test"
 
-@bot.message_handler(content_types=['text'])
+    @bot.message_handler(content_types=['text'])
 
-def lalala(message):
+    def lalala(message):
 
-    if message.chat.type == 'private':
+        if message.chat.type == 'private':
 
-        if message.text == '/start ban':
+          if message.text == '/start ban':
 
             bot.send_message(message.chat.id, 'бан')
 
-        elif message.text == '/start test':
+          elif message.text == '/start test':
 
             bot.send_message(message.chat.id, 'Привет, ты перешёл по реф. ссылки')
 
-        else:
+          else:
 
             bot.send_message(message.chat.id, 'Привет')
 
             
 
-# Вот как сделал это я!
+Вот как сделал это я!
 
-Ну и заключение
+# Ну и заключение
 
-bot.polling()
+  bot.polling()
 
-Полный код есть на GitHub?
+Полный код есть на GitHub
