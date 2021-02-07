@@ -14,11 +14,11 @@ Deep Linking - это вот такие ссылки - https://t.me/usernamebot?
 
 # Делаем стандартое действие
 
-  import telebot
+    import telebot
 
-  TOKEN = "ваш токен"
+    TOKEN = "ваш токен"
 
-  bot = telebot.TeleBot(TOKEN)
+    bot = telebot.TeleBot(TOKEN)
 
 Теперь нам нужно сделать чтобы бот реагировал на команду "/start test"
 
@@ -46,6 +46,6 @@ Deep Linking - это вот такие ссылки - https://t.me/usernamebot?
 
 # Ну и заключение
 
-  bot.polling()
+    bot.polling()
 
 Полный код есть на GitHub
